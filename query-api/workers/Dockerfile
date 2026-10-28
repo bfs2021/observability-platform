@@ -3,6 +3,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 COPY query-api/workers/trace-analyser.js .
+COPY query-api/workers/analysis-prompt.js .
 COPY shared /shared
 
 # Create a minimal package.json for the worker
